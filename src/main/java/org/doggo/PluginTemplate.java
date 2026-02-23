@@ -1,5 +1,9 @@
-package org.doggo.plugin;
+package org.doggo;
 
+import com.hypixel.hytale.logger.HytaleLogger;
+import com.hypixel.hytale.server.core.plugin.JavaPlugin;
+import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
+import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
 /**
  * It is a plugin template.
@@ -15,7 +19,7 @@ public class PluginTemplate extends JavaPlugin {
         public static final HytaleLogger LOGGER = HytaleLogger.getLogger();
 
 
-        public MiniGCore(@NonNullDecl JavaPluginInit init) {
+        public PluginTemplate(@NonNullDecl JavaPluginInit init) {
             super(init);
         }
 
