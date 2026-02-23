@@ -1,0 +1,19 @@
+{
+  "Group": "org.doggo",
+  "Name": "Name",
+  "Version": "1.0.0",
+  "Description": "Description",
+  "Authors": [
+    {
+      "Name": "Doggo_leader",
+      "Email": "message@doggoleader.ru"
+    }
+  ],
+  "Website": "",
+  "ServerVersion": "2026.02.06-0baf7c5aa",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "Main": "org.doggo.plugin.PluginTemplate",
+  "IncludesAssetPack": true
+}
