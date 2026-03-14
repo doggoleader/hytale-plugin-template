@@ -13,6 +13,9 @@ repositories {
     mavenCentral()
 }
 
+
+var destinationPath = "C:\\Users\\doggo\\AppData\\Roaming\\Hytale\\UserData\\Mods"
+
 dependencies {
     testImplementation(platform("org.junit:junit-bom:5.10.0"))
     testImplementation("org.junit.jupiter:junit-jupiter")
@@ -22,9 +25,13 @@ dependencies {
     implementation("commons-io:commons-io:2.6")
 }
 
+
 tasks.shadowJar {
     archiveClassifier.set("")
+    destinationDirectory.set(file(destinationPath))
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 
+    from("src/main/resources")
 }
 
 tasks.build {
